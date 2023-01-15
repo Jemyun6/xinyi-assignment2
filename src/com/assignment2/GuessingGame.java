@@ -41,7 +41,7 @@ public class GuessingGame {
 			} else if (guess < 1 || guess > 100) {
 				System.out.println("Your guess is not between 1 and 100, please try again");
 				j--;
-			} else if (guess < number) {
+			} else if (guess < number && j < 4) {
 				System.out.println("Please pick a higher number");
 			} else if (guess > number && j < 4) {
 				System.out.println("Please pick a lower number");
